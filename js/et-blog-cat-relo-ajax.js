@@ -48,10 +48,10 @@
         const categories = [
           ...article.querySelectorAll('.post-meta a[href*="category"]')
         ]
-
         const catClone = handleCategoryClone(categories)
 
         // console.log(catClone)
+        article.classList.add('blog_cat_relo')
         article.appendChild(catClone)
       }
     }
