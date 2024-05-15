@@ -25,7 +25,7 @@
       if (cats.length < 1) return
 
       const newCatWrap = document.createElement('div')
-      newCatWrap.className = 'post_meta category'
+      newCatWrap.className = 'post-meta category'
 
       for (const cat of cats) {
         newCatWrap.appendChild(cat)
