@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WP Users Delete</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			header {
+				background-color: #f0f0f0;
+				padding: 1rem;
+				margin-bottom: 1rem;
+			}
+			header ul {
+				display: flex;
+				justify-content: space-evenly;
+				list-style: none;
+			}
+			main {
+				min-height: 1400px;
+			}
+			.container {
+				max-width: 1200px;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			footer {
+				background-color: #202020;
+				padding: 1rem;
+			}
+			footer h4 {
+				color: white;
+			}
+		</style>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="wp-block-template-part">
+			<div class="container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<h1>This is the content area.</h1>
+
+				<!-- <?php
+                $user_query = new WP_User_Query( array( 'exclude' => array( 12613,2 ), 'number' => 9999 ) );
+                echo '<div class="users_area">';
+                echo '<h2>'.count($user_query->get_results()).' users</h2>';
+                if ( ! empty( $user_query->get_results() ) ) {
+                    echo '<ul>';
+                    foreach ( $user_query->get_results() as $user ) {
+                        echo '<li data-user-id="'.$user->id.'">' . $user->display_name . '</li>';
+                    }
+                    echo '</ul>';
+                } else {
+                    echo 'No users found.';
+                }
+                    <a href="#" class="delete_users">Delete Users</a>
+                </div>
+                ?> -->
+			</div>
+		</main>
+		<footer>
+			<div class="container">
+				<h4>This is the footer area.</h4>
+			</div>
+		</footer>
+
+		<script src="./js/main.js"></script>
+		<!-- wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/main.js?' . date_i18n(__( 'AYmd-h:i:s', 'mdwibf' ) ), array('jquery'), THEME_VERSION, true );
+        wp_localize_script( 'main-script', 'mainParam', array(
+            'ajaxurl' => admin_url('admin-ajax.php'),
+            'root' => esc_url_raw( rest_url() ),
+            'nonce' => wp_create_nonce( 'ajax_post_validation' ),
+            'wp_rest_nonce' => wp_create_nonce( 'wp_rest' ),
+            'is_user_logged_in' => is_user_logged_in(),
+        ) ); -->
+	</body>
+</html>
