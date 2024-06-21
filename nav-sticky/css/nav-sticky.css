@@ -1,0 +1,21 @@
+header.wp-block-template-part {
+    box-shadow: none;
+    transition: var(--trn-ease);
+}
+
+header.wp-block-template-part.nav_sticky {
+    box-shadow: 0px 5px 5px -5px var(--wp--preset--color--gray-contrast-2, rgba(0, 0, 0, .25));
+    background-color: var(--wp--preset--color--white, white);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100001;
+}
+
+.admin-bar header.wp-block-template-part.nav_sticky {
+    top: 32px;
+}
+
+header.wp-block-template-part.nav_sticky+main {
+    padding-top: 96px;
+}
