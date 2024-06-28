@@ -45,9 +45,8 @@
   width: 30px;
   margin-top: -20px;
   position: absolute;
-  right: 0;
-  top: 0;
-  transform: translate(100%, -50%);
+  right: 10px;
+  top: 10px;
 }
 
 .popup_banner button::before {
