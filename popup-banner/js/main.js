@@ -5,7 +5,6 @@
 
   const closeBtn = document.createElement('button')
   closeBtn.classList.add('popup_banner_close')
-  closeBtn.textContent = '&#x2716;'
 
   popupBanner.appendChild(closeBtn)
 

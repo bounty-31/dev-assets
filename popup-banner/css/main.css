@@ -50,6 +50,10 @@
   transform: translate(100%, -50%);
 }
 
+.popup_banner button {
+  content: "\00d7";
+}
+
 @-webkit-keyframes bounceInUp {
 
   0%,
