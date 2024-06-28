@@ -50,7 +50,7 @@
   transform: translate(100%, -50%);
 }
 
-.popup_banner button {
+.popup_banner button::before {
   content: "\00d7";
 }
 
